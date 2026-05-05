@@ -1,0 +1,29 @@
+# --- secrets ---
+.env
+*.key
+
+# --- python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# --- jupyter (cell outputs MUST be kept per assignment) ---
+.ipynb_checkpoints/
+
+# --- large binary models (regeneratable; moved to OneDrive) ---
+outputs/models/*.pt
+outputs/models/*.joblib
+outputs/cache/
+
+# --- posters (~50MB of jpgs; go to OneDrive's image dataset folder) ---
+data/posters/
+
+# --- editor / OS ---
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db

@@ -1,0 +1,6 @@
+Cluster 0: love, lol, true, time, tom, yes, did, think, don, better, comment, wow
+Cluster 1: movie, max, mad max, mad, just, watching, trailer, masterpiece, awesome, make, watched, horror
+Cluster 2: best, beautiful, thank, best movie, beautiful thank, thank sharing, sharing, movie, ve, wow, explanation, seen
+Cluster 3: watch, movie, watch movie, la, watch trailer, trailer, today, want watch, need, worth watch, worth, imma watch
+Cluster 4: years, 10 years, 10, years movie, years later, later, update, feels, movie, love, trailer, years old
+Cluster 5: like, just, good, movies, people, horror, know, thought, movie, didn, jump, film

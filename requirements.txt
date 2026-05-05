@@ -1,0 +1,47 @@
+# ============================================================
+# Movie Review Analysis Pipeline - dependencies
+# Python 3.10 / 3.11 recommended
+# ============================================================
+
+# ---- Web scraping ----
+youtube-comment-downloader>=0.1.76   # YouTube comment scraping (no API key needed)
+requests>=2.31.0                     # HTTP client for TMDB / IMDb
+beautifulsoup4>=4.12.0               # IMDb HTML parsing
+lxml>=4.9.0                          # fast parser backend for bs4
+selenium>=4.15.0                     # fallback browser automation (from teacher's WS1)
+undetected-chromedriver>=3.5.5       # anti-bot bypass
+
+# ---- Data processing ----
+pandas>=2.0.0
+numpy>=1.24.0
+tqdm>=4.66.0
+python-dotenv>=1.0.0                 # read API keys from .env
+
+# ---- Text vectorization (teacher's WS4) ----
+scikit-learn>=1.3.0                  # TF-IDF, KMeans, LogReg, t-SNE
+gensim>=4.3.0                        # Word2Vec, Doc2Vec
+nltk>=3.8.0                          # tokenization, stopwords
+
+# ---- Image vectorization: CLIP + ResNet50 (teacher's WS8) ----
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.35.0                 # CLIP
+Pillow>=10.0.0
+
+# ---- Image classification (teacher's WS5) ----
+# tensorflow>=2.14.0,<2.16.0         # optional: uncomment to run teacher's Keras MobileNet
+                                     # default uses PyTorch MobileNetV3 to avoid TF install issues on Windows
+
+# ---- OpenAI API ----
+openai>=1.10.0
+tenacity>=8.2.0                      # automatic retry
+
+# ---- Visualization ----
+matplotlib>=3.7.0
+seaborn>=0.12.0
+wordcloud>=1.9.0
+umap-learn>=0.5.0                    # faster than t-SNE
+
+# ---- Utilities ----
+pyyaml>=6.0
+joblib>=1.3.0

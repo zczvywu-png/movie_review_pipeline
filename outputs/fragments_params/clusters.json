@@ -1,0 +1,910 @@
+{
+  "schema_version": "1.0",
+  "design_tool_pipeline": "OpenSCAD (CSG) -> STL -> Blender (modifier+driver)",
+  "n_fragments": 27,
+  "n_genres": 3,
+  "rings": {
+    "action": {
+      "radius": 8.0
+    },
+    "romance": {
+      "radius": 14.0
+    },
+    "horror": {
+      "radius": 20.0
+    }
+  },
+  "fragments": [
+    {
+      "fragment_id": "stele-romance-11036-c0-r1",
+      "genre": "romance",
+      "movie_title": "The Notebook",
+      "tmdb_id": 11036,
+      "cluster_id": 0,
+      "rank": 1,
+      "n_reviews": 106,
+      "avg_intensity": 2.4211,
+      "std_intensity": 1.0706,
+      "pos_ratio": 0.3158,
+      "neg_ratio": 0.2105,
+      "vocab_diversity": 0.4268,
+      "poster_rgb": [
+        0.6623,
+        0.651,
+        0.6677
+      ],
+      "params": {
+        "height": 0.6132,
+        "twist": 0.0,
+        "porosity": 0.6621,
+        "base_width": 1.0,
+        "top_chamfer": 0.5526,
+        "rugged": 0.5353
+      },
+      "position": {
+        "x": -2.4311,
+        "y": -13.7873,
+        "z": 0.0,
+        "rz": 6.1087
+      }
+    },
+    {
+      "fragment_id": "stele-romance-11036-c5-r2",
+      "genre": "romance",
+      "movie_title": "The Notebook",
+      "tmdb_id": 11036,
+      "cluster_id": 5,
+      "rank": 2,
+      "n_reviews": 25,
+      "avg_intensity": 2.4444,
+      "std_intensity": 0.527,
+      "pos_ratio": 0.1111,
+      "neg_ratio": 0.3333,
+      "vocab_diversity": 0.4876,
+      "poster_rgb": [
+        0.6623,
+        0.651,
+        0.6677
+      ],
+      "params": {
+        "height": 0.6167,
+        "twist": 1.0,
+        "porosity": 0.7351,
+        "base_width": 0.7016,
+        "top_chamfer": 0.3889,
+        "rugged": 0.2635
+      },
+      "position": {
+        "x": 7.0,
+        "y": -12.1244,
+        "z": 0.0,
+        "rz": 6.8068
+      }
+    },
+    {
+      "fragment_id": "stele-romance-11036-c3-r3",
+      "genre": "romance",
+      "movie_title": "The Notebook",
+      "tmdb_id": 11036,
+      "cluster_id": 3,
+      "rank": 3,
+      "n_reviews": 9,
+      "avg_intensity": 2.6667,
+      "std_intensity": 1.5275,
+      "pos_ratio": 0.3333,
+      "neg_ratio": 0.3333,
+      "vocab_diversity": 0.6188,
+      "poster_rgb": [
+        0.6623,
+        0.651,
+        0.6677
+      ],
+      "params": {
+        "height": 0.65,
+        "twist": 0.6,
+        "porosity": 0.75,
+        "base_width": 0.5,
+        "top_chamfer": 0.5,
+        "rugged": 0.7638
+      },
+      "position": {
+        "x": 13.1557,
+        "y": -4.7883,
+        "z": 0.0,
+        "rz": 7.5049
+      }
+    },
+    {
+      "fragment_id": "stele-romance-313369-c0-r1",
+      "genre": "romance",
+      "movie_title": "La La Land",
+      "tmdb_id": 313369,
+      "cluster_id": 0,
+      "rank": 1,
+      "n_reviews": 69,
+      "avg_intensity": 2.7222,
+      "std_intensity": 1.3636,
+      "pos_ratio": 0.3889,
+      "neg_ratio": 0.1667,
+      "vocab_diversity": 0.5567,
+      "poster_rgb": [
+        0.1976,
+        0.1628,
+        0.374
+      ],
+      "params": {
+        "height": 0.6583,
+        "twist": 0.0,
+        "porosity": 0.75,
+        "base_width": 0.9105,
+        "top_chamfer": 0.6111,
+        "rugged": 0.6818
+      },
+      "position": {
+        "x": 13.1557,
+        "y": 4.7883,
+        "z": 0.0,
+        "rz": 1.9199
+      }
+    },
+    {
+      "fragment_id": "stele-romance-313369-c1-r2",
+      "genre": "romance",
+      "movie_title": "La La Land",
+      "tmdb_id": 313369,
+      "cluster_id": 1,
+      "rank": 2,
+      "n_reviews": 26,
+      "avg_intensity": 3.2857,
+      "std_intensity": 1.1127,
+      "pos_ratio": 0.5714,
+      "neg_ratio": 0.1429,
+      "vocab_diversity": 0.5075,
+      "poster_rgb": [
+        0.1976,
+        0.1628,
+        0.374
+      ],
+      "params": {
+        "height": 0.7429,
+        "twist": 0.2,
+        "porosity": 0.75,
+        "base_width": 0.7095,
+        "top_chamfer": 0.7143,
+        "rugged": 0.5563
+      },
+      "position": {
+        "x": 7.0,
+        "y": 12.1244,
+        "z": 0.0,
+        "rz": 2.618
+      }
+    },
+    {
+      "fragment_id": "stele-romance-313369-c5-r3",
+      "genre": "romance",
+      "movie_title": "La La Land",
+      "tmdb_id": 313369,
+      "cluster_id": 5,
+      "rank": 3,
+      "n_reviews": 20,
+      "avg_intensity": 5.0,
+      "std_intensity": 0.0,
+      "pos_ratio": 1.0,
+      "neg_ratio": 0.0,
+      "vocab_diversity": 0.544,
+      "poster_rgb": [
+        0.1976,
+        0.1628,
+        0.374
+      ],
+      "params": {
+        "height": 1.0,
+        "twist": 1.0,
+        "porosity": 0.75,
+        "base_width": 0.6565,
+        "top_chamfer": 1.0,
+        "rugged": 0.0
+      },
+      "position": {
+        "x": -2.4311,
+        "y": 13.7873,
+        "z": 0.0,
+        "rz": 3.3161
+      }
+    },
+    {
+      "fragment_id": "stele-action-361743-c0-r1",
+      "genre": "action",
+      "movie_title": "Top Gun: Maverick",
+      "tmdb_id": 361743,
+      "cluster_id": 0,
+      "rank": 1,
+      "n_reviews": 74,
+      "avg_intensity": 3.6667,
+      "std_intensity": 1.4142,
+      "pos_ratio": 0.7778,
+      "neg_ratio": 0.0,
+      "vocab_diversity": 0.505,
+      "poster_rgb": [
+        0.5585,
+        0.5375,
+        0.4735
+      ],
+      "params": {
+        "height": 0.8,
+        "twist": 0.0,
+        "porosity": 0.75,
+        "base_width": 0.925,
+        "top_chamfer": 0.8889,
+        "rugged": 0.7071
+      },
+      "position": {
+        "x": -0.0,
+        "y": -8.0,
+        "z": 0.0,
+        "rz": 6.2832
+      }
+    },
+    {
+      "fragment_id": "stele-action-361743-c5-r2",
+      "genre": "action",
+      "movie_title": "Top Gun: Maverick",
+      "tmdb_id": 361743,
+      "cluster_id": 5,
+      "rank": 2,
+      "n_reviews": 27,
+      "avg_intensity": 2.6667,
+      "std_intensity": 1.5055,
+      "pos_ratio": 0.3333,
+      "neg_ratio": 0.0,
+      "vocab_diversity": 0.5117,
+      "poster_rgb": [
+        0.5585,
+        0.5375,
+        0.4735
+      ],
+      "params": {
+        "height": 0.65,
+        "twist": 1.0,
+        "porosity": 0.75,
+        "base_width": 0.7172,
+        "top_chamfer": 0.6667,
+        "rugged": 0.7528
+      },
+      "position": {
+        "x": 4.0,
+        "y": -6.9282,
+        "z": 0.0,
+        "rz": 6.8068
+      }
+    },
+    {
+      "fragment_id": "stele-action-361743-c1-r3",
+      "genre": "action",
+      "movie_title": "Top Gun: Maverick",
+      "tmdb_id": 361743,
+      "cluster_id": 1,
+      "rank": 3,
+      "n_reviews": 24,
+      "avg_intensity": 4.3333,
+      "std_intensity": 1.1547,
+      "pos_ratio": 0.6667,
+      "neg_ratio": 0.0,
+      "vocab_diversity": 0.5479,
+      "poster_rgb": [
+        0.5585,
+        0.5375,
+        0.4735
+      ],
+      "params": {
+        "height": 0.9,
+        "twist": 0.2,
+        "porosity": 0.75,
+        "base_width": 0.6933,
+        "top_chamfer": 0.8333,
+        "rugged": 0.5774
+      },
+      "position": {
+        "x": 6.9282,
+        "y": -4.0,
+        "z": 0.0,
+        "rz": 7.3304
+      }
+    },
+    {
+      "fragment_id": "stele-horror-419430-c0-r1",
+      "genre": "horror",
+      "movie_title": "Get Out",
+      "tmdb_id": 419430,
+      "cluster_id": 0,
+      "rank": 1,
+      "n_reviews": 104,
+      "avg_intensity": 2.4857,
+      "std_intensity": 0.9194,
+      "pos_ratio": 0.2571,
+      "neg_ratio": 0.1429,
+      "vocab_diversity": 0.4222,
+      "poster_rgb": [
+        0.4801,
+        0.4801,
+        0.4801
+      ],
+      "params": {
+        "height": 0.6229,
+        "twist": 0.0,
+        "porosity": 0.6566,
+        "base_width": 0.996,
+        "top_chamfer": 0.5571,
+        "rugged": 0.4597
+      },
+      "position": {
+        "x": 20.0,
+        "y": 0.0,
+        "z": 0.0,
+        "rz": 1.5708
+      }
+    },
+    {
+      "fragment_id": "stele-horror-419430-c5-r2",
+      "genre": "horror",
+      "movie_title": "Get Out",
+      "tmdb_id": 419430,
+      "cluster_id": 5,
+      "rank": 2,
+      "n_reviews": 31,
+      "avg_intensity": 2.6667,
+      "std_intensity": 1.2111,
+      "pos_ratio": 0.3333,
+      "neg_ratio": 0.1667,
+      "vocab_diversity": 0.5196,
+      "poster_rgb": [
+        0.4801,
+        0.4801,
+        0.4801
+      ],
+      "params": {
+        "height": 0.65,
+        "twist": 1.0,
+        "porosity": 0.75,
+        "base_width": 0.7454,
+        "top_chamfer": 0.5833,
+        "rugged": 0.6055
+      },
+      "position": {
+        "x": 10.0,
+        "y": 17.3205,
+        "z": 0.0,
+        "rz": 2.618
+      }
+    },
+    {
+      "fragment_id": "stele-horror-419430-c1-r3",
+      "genre": "horror",
+      "movie_title": "Get Out",
+      "tmdb_id": 419430,
+      "cluster_id": 1,
+      "rank": 3,
+      "n_reviews": 13,
+      "avg_intensity": 3.8,
+      "std_intensity": 1.3038,
+      "pos_ratio": 0.6,
+      "neg_ratio": 0.4,
+      "vocab_diversity": 0.6307,
+      "poster_rgb": [
+        0.4801,
+        0.4801,
+        0.4801
+      ],
+      "params": {
+        "height": 0.82,
+        "twist": 0.2,
+        "porosity": 0.75,
+        "base_width": 0.571,
+        "top_chamfer": 0.6,
+        "rugged": 0.6519
+      },
+      "position": {
+        "x": -10.0,
+        "y": 17.3205,
+        "z": 0.0,
+        "rz": 3.6652
+      }
+    },
+    {
+      "fragment_id": "stele-horror-493922-c5-r1",
+      "genre": "horror",
+      "movie_title": "Hereditary",
+      "tmdb_id": 493922,
+      "cluster_id": 5,
+      "rank": 1,
+      "n_reviews": 68,
+      "avg_intensity": 3.24,
+      "std_intensity": 0.9695,
+      "pos_ratio": 0.4,
+      "neg_ratio": 0.44,
+      "vocab_diversity": 0.3147,
+      "poster_rgb": [
+        0.17,
+        0.1756,
+        0.1792
+      ],
+      "params": {
+        "height": 0.736,
+        "twist": 1.0,
+        "porosity": 0.5276,
+        "base_width": 0.9075,
+        "top_chamfer": 0.48,
+        "rugged": 0.4848
+      },
+      "position": {
+        "x": -20.0,
+        "y": 0.0,
+        "z": 0.0,
+        "rz": 4.7124
+      }
+    },
+    {
+      "fragment_id": "stele-horror-493922-c1-r2",
+      "genre": "horror",
+      "movie_title": "Hereditary",
+      "tmdb_id": 493922,
+      "cluster_id": 1,
+      "rank": 2,
+      "n_reviews": 40,
+      "avg_intensity": 4.1667,
+      "std_intensity": 1.0981,
+      "pos_ratio": 0.5,
+      "neg_ratio": 0.3333,
+      "vocab_diversity": 0.4398,
+      "poster_rgb": [
+        0.17,
+        0.1756,
+        0.1792
+      ],
+      "params": {
+        "height": 0.875,
+        "twist": 0.2,
+        "porosity": 0.6777,
+        "base_width": 0.7976,
+        "top_chamfer": 0.5833,
+        "rugged": 0.5491
+      },
+      "position": {
+        "x": -10.0,
+        "y": -17.3205,
+        "z": 0.0,
+        "rz": 5.7596
+      }
+    },
+    {
+      "fragment_id": "stele-horror-493922-c0-r3",
+      "genre": "horror",
+      "movie_title": "Hereditary",
+      "tmdb_id": 493922,
+      "cluster_id": 0,
+      "rank": 3,
+      "n_reviews": 37,
+      "avg_intensity": 3.0,
+      "std_intensity": 1.118,
+      "pos_ratio": 0.4444,
+      "neg_ratio": 0.1111,
+      "vocab_diversity": 0.6349,
+      "poster_rgb": [
+        0.17,
+        0.1756,
+        0.1792
+      ],
+      "params": {
+        "height": 0.7,
+        "twist": 0.0,
+        "porosity": 0.75,
+        "base_width": 0.7816,
+        "top_chamfer": 0.6667,
+        "rugged": 0.559
+      },
+      "position": {
+        "x": 10.0,
+        "y": -17.3205,
+        "z": 0.0,
+        "rz": 6.8068
+      }
+    },
+    {
+      "fragment_id": "stele-action-575264-c0-r1",
+      "genre": "action",
+      "movie_title": "Mission: Impossible - Dead Reckoning",
+      "tmdb_id": 575264,
+      "cluster_id": 0,
+      "rank": 1,
+      "n_reviews": 93,
+      "avg_intensity": 3.2778,
+      "std_intensity": 1.3198,
+      "pos_ratio": 0.4444,
+      "neg_ratio": 0.1667,
+      "vocab_diversity": 0.4621,
+      "poster_rgb": [
+        0.6035,
+        0.5597,
+        0.5564
+      ],
+      "params": {
+        "height": 0.7417,
+        "twist": 0.0,
+        "porosity": 0.7045,
+        "base_width": 0.9727,
+        "top_chamfer": 0.6389,
+        "rugged": 0.6599
+      },
+      "position": {
+        "x": -8.0,
+        "y": 0.0,
+        "z": 0.0,
+        "rz": 4.7124
+      }
+    },
+    {
+      "fragment_id": "stele-action-575264-c5-r2",
+      "genre": "action",
+      "movie_title": "Mission: Impossible - Dead Reckoning",
+      "tmdb_id": 575264,
+      "cluster_id": 5,
+      "rank": 2,
+      "n_reviews": 21,
+      "avg_intensity": 3.0,
+      "std_intensity": 0.0,
+      "pos_ratio": 0.0,
+      "neg_ratio": 1.0,
+      "vocab_diversity": 0.5615,
+      "poster_rgb": [
+        0.6035,
+        0.5597,
+        0.5564
+      ],
+      "params": {
+        "height": 0.7,
+        "twist": 1.0,
+        "porosity": 0.75,
+        "base_width": 0.6663,
+        "top_chamfer": 0.0,
+        "rugged": 0.0
+      },
+      "position": {
+        "x": -6.9282,
+        "y": -4.0,
+        "z": 0.0,
+        "rz": 5.236
+      }
+    },
+    {
+      "fragment_id": "stele-action-575264-c2-r3",
+      "genre": "action",
+      "movie_title": "Mission: Impossible - Dead Reckoning",
+      "tmdb_id": 575264,
+      "cluster_id": 2,
+      "rank": 3,
+      "n_reviews": 15,
+      "avg_intensity": 4.2,
+      "std_intensity": 0.4472,
+      "pos_ratio": 1.0,
+      "neg_ratio": 0.0,
+      "vocab_diversity": 0.5665,
+      "poster_rgb": [
+        0.6035,
+        0.5597,
+        0.5564
+      ],
+      "params": {
+        "height": 0.88,
+        "twist": 0.4,
+        "porosity": 0.75,
+        "base_width": 0.5991,
+        "top_chamfer": 1.0,
+        "rugged": 0.2236
+      },
+      "position": {
+        "x": -4.0,
+        "y": -6.9282,
+        "z": 0.0,
+        "rz": 5.7596
+      }
+    },
+    {
+      "fragment_id": "stele-action-603692-c0-r1",
+      "genre": "action",
+      "movie_title": "John Wick: Chapter 4",
+      "tmdb_id": 603692,
+      "cluster_id": 0,
+      "rank": 1,
+      "n_reviews": 73,
+      "avg_intensity": 2.8125,
+      "std_intensity": 1.5586,
+      "pos_ratio": 0.375,
+      "neg_ratio": 0.0,
+      "vocab_diversity": 0.4274,
+      "poster_rgb": [
+        0.447,
+        0.3226,
+        0.2369
+      ],
+      "params": {
+        "height": 0.6719,
+        "twist": 0.0,
+        "porosity": 0.6628,
+        "base_width": 0.9222,
+        "top_chamfer": 0.6875,
+        "rugged": 0.7793
+      },
+      "position": {
+        "x": 8.0,
+        "y": 0.0,
+        "z": 0.0,
+        "rz": 1.5708
+      }
+    },
+    {
+      "fragment_id": "stele-action-603692-c5-r2",
+      "genre": "action",
+      "movie_title": "John Wick: Chapter 4",
+      "tmdb_id": 603692,
+      "cluster_id": 5,
+      "rank": 2,
+      "n_reviews": 57,
+      "avg_intensity": 3.3333,
+      "std_intensity": 1.0328,
+      "pos_ratio": 0.6667,
+      "neg_ratio": 0.0,
+      "vocab_diversity": 0.3467,
+      "poster_rgb": [
+        0.447,
+        0.3226,
+        0.2369
+      ],
+      "params": {
+        "height": 0.75,
+        "twist": 1.0,
+        "porosity": 0.5661,
+        "base_width": 0.8708,
+        "top_chamfer": 0.8333,
+        "rugged": 0.5164
+      },
+      "position": {
+        "x": 6.9282,
+        "y": 4.0,
+        "z": 0.0,
+        "rz": 2.0944
+      }
+    },
+    {
+      "fragment_id": "stele-action-603692-c1-r3",
+      "genre": "action",
+      "movie_title": "John Wick: Chapter 4",
+      "tmdb_id": 603692,
+      "cluster_id": 1,
+      "rank": 3,
+      "n_reviews": 13,
+      "avg_intensity": 4.0,
+      "std_intensity": 0.0,
+      "pos_ratio": 1.0,
+      "neg_ratio": 0.0,
+      "vocab_diversity": 0.5862,
+      "poster_rgb": [
+        0.447,
+        0.3226,
+        0.2369
+      ],
+      "params": {
+        "height": 0.85,
+        "twist": 0.2,
+        "porosity": 0.75,
+        "base_width": 0.571,
+        "top_chamfer": 1.0,
+        "rugged": 0.0
+      },
+      "position": {
+        "x": 4.0,
+        "y": 6.9282,
+        "z": 0.0,
+        "rz": 2.618
+      }
+    },
+    {
+      "fragment_id": "stele-romance-666277-c0-r1",
+      "genre": "romance",
+      "movie_title": "Past Lives",
+      "tmdb_id": 666277,
+      "cluster_id": 0,
+      "rank": 1,
+      "n_reviews": 79,
+      "avg_intensity": 3.0,
+      "std_intensity": 1.4142,
+      "pos_ratio": 0.5,
+      "neg_ratio": 0.0714,
+      "vocab_diversity": 0.3699,
+      "poster_rgb": [
+        0.3952,
+        0.383,
+        0.3624
+      ],
+      "params": {
+        "height": 0.7,
+        "twist": 0.0,
+        "porosity": 0.5939,
+        "base_width": 0.9387,
+        "top_chamfer": 0.7143,
+        "rugged": 0.7071
+      },
+      "position": {
+        "x": -10.7246,
+        "y": 8.999,
+        "z": 0.0,
+        "rz": 4.0143
+      }
+    },
+    {
+      "fragment_id": "stele-romance-666277-c2-r2",
+      "genre": "romance",
+      "movie_title": "Past Lives",
+      "tmdb_id": 666277,
+      "cluster_id": 2,
+      "rank": 2,
+      "n_reviews": 34,
+      "avg_intensity": 4.3333,
+      "std_intensity": 0.5164,
+      "pos_ratio": 1.0,
+      "neg_ratio": 0.0,
+      "vocab_diversity": 0.4441,
+      "poster_rgb": [
+        0.3952,
+        0.383,
+        0.3624
+      ],
+      "params": {
+        "height": 0.9,
+        "twist": 0.4,
+        "porosity": 0.683,
+        "base_width": 0.7643,
+        "top_chamfer": 1.0,
+        "rugged": 0.2582
+      },
+      "position": {
+        "x": -14.0,
+        "y": 0.0,
+        "z": 0.0,
+        "rz": 4.7124
+      }
+    },
+    {
+      "fragment_id": "stele-romance-666277-c5-r3",
+      "genre": "romance",
+      "movie_title": "Past Lives",
+      "tmdb_id": 666277,
+      "cluster_id": 5,
+      "rank": 3,
+      "n_reviews": 31,
+      "avg_intensity": 3.2857,
+      "std_intensity": 1.3801,
+      "pos_ratio": 0.5714,
+      "neg_ratio": 0.1429,
+      "vocab_diversity": 0.3617,
+      "poster_rgb": [
+        0.3952,
+        0.383,
+        0.3624
+      ],
+      "params": {
+        "height": 0.7429,
+        "twist": 1.0,
+        "porosity": 0.5841,
+        "base_width": 0.7454,
+        "top_chamfer": 0.7143,
+        "rugged": 0.6901
+      },
+      "position": {
+        "x": -10.7246,
+        "y": -8.999,
+        "z": 0.0,
+        "rz": 5.4105
+      }
+    },
+    {
+      "fragment_id": "stele-action-786892-c0-r1",
+      "genre": "action",
+      "movie_title": "Mad Max: Furiosa",
+      "tmdb_id": 786892,
+      "cluster_id": 0,
+      "rank": 1,
+      "n_reviews": 79,
+      "avg_intensity": 2.5625,
+      "std_intensity": 1.315,
+      "pos_ratio": 0.3125,
+      "neg_ratio": 0.125,
+      "vocab_diversity": 0.4694,
+      "poster_rgb": [
+        0.4864,
+        0.3901,
+        0.2934
+      ],
+      "params": {
+        "height": 0.6344,
+        "twist": 0.0,
+        "porosity": 0.7133,
+        "base_width": 0.9387,
+        "top_chamfer": 0.5938,
+        "rugged": 0.6575
+      },
+      "position": {
+        "x": 0.0,
+        "y": 8.0,
+        "z": 0.0,
+        "rz": 3.1416
+      }
+    },
+    {
+      "fragment_id": "stele-action-786892-c5-r2",
+      "genre": "action",
+      "movie_title": "Mad Max: Furiosa",
+      "tmdb_id": 786892,
+      "cluster_id": 5,
+      "rank": 2,
+      "n_reviews": 26,
+      "avg_intensity": 5.0,
+      "std_intensity": 0.0,
+      "pos_ratio": 1.0,
+      "neg_ratio": 0.0,
+      "vocab_diversity": 0.4939,
+      "poster_rgb": [
+        0.4864,
+        0.3901,
+        0.2934
+      ],
+      "params": {
+        "height": 1.0,
+        "twist": 1.0,
+        "porosity": 0.7427,
+        "base_width": 0.7095,
+        "top_chamfer": 1.0,
+        "rugged": 0.0
+      },
+      "position": {
+        "x": -4.0,
+        "y": 6.9282,
+        "z": 0.0,
+        "rz": 3.6652
+      }
+    },
+    {
+      "fragment_id": "stele-action-786892-c1-r3",
+      "genre": "action",
+      "movie_title": "Mad Max: Furiosa",
+      "tmdb_id": 786892,
+      "cluster_id": 1,
+      "rank": 3,
+      "n_reviews": 23,
+      "avg_intensity": 3.25,
+      "std_intensity": 0.5,
+      "pos_ratio": 0.5,
+      "neg_ratio": 0.5,
+      "vocab_diversity": 0.5271,
+      "poster_rgb": [
+        0.4864,
+        0.3901,
+        0.2934
+      ],
+      "params": {
+        "height": 0.7375,
+        "twist": 0.2,
+        "porosity": 0.75,
+        "base_width": 0.6847,
+        "top_chamfer": 0.5,
+        "rugged": 0.25
+      },
+      "position": {
+        "x": -6.9282,
+        "y": 4.0,
+        "z": 0.0,
+        "rz": 4.1888
+      }
+    }
+  ]
+}

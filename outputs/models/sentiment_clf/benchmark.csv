@@ -1,0 +1,7 @@
+vectorizer,classifier,accuracy,f1_macro
+doc2vec,linsvc,0.5,0.2227
+tfidf,rf,0.3667,0.2036
+doc2vec,rf,0.3667,0.1999
+tfidf,linsvc,0.3333,0.187
+tfidf,logreg,0.35,0.18
+doc2vec,logreg,0.45,0.157

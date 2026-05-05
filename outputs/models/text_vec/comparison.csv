@@ -1,0 +1,4 @@
+vectorizer,dim,cluster_purity,knn_mAP@10
+tfidf,1819,0.4454,0.6865
+word2vec_mean,100,0.4484,0.6213
+doc2vec,100,0.4454,0.5959

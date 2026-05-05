@@ -1,0 +1,129 @@
+# ============================================================
+# 电影评论分析工作流 - 主配置
+# ============================================================
+
+# ---- 抓取规模控制 ----
+scrape:
+  comments_per_video: 150          # 每个 YouTube 视频抓多少条评论（150 已远超作业 200-300/数据集 的硬指标，省 30% 时间）
+  max_videos_per_genre: 4          # 每个电影类型抓几部
+  imdb_reviews_per_movie: 60       # 每部电影 IMDb 评论数
+  posters_per_movie: 1             # 每部电影海报数
+  request_delay_sec: 1.0           # 请求间隔（防反爬）
+
+# ---- 电影选择（按类型分组） ----
+# 选用近年高热度、预告片评论丰富的电影
+# YouTube 视频 ID 来自官方电影频道发布的预告片
+movies:
+  action:
+    - title: "Mission: Impossible - Dead Reckoning"
+      year: 2023
+      tmdb_id: 575264
+      imdb_id: "tt9603212"
+      youtube_trailer_id: "avz06PDqDbM"     # Official Trailer
+    - title: "John Wick: Chapter 4"
+      year: 2023
+      tmdb_id: 603692
+      imdb_id: "tt10366206"
+      youtube_trailer_id: "qEVUtrk8_B4"
+    - title: "Top Gun: Maverick"
+      year: 2022
+      tmdb_id: 361743
+      imdb_id: "tt1745960"
+      youtube_trailer_id: "giXco2jaZ_4"
+    - title: "Mad Max: Furiosa"
+      year: 2024
+      tmdb_id: 786892
+      imdb_id: "tt12037194"
+      youtube_trailer_id: "XJMuhwVlca4"
+
+  romance:
+    - title: "La La Land"
+      year: 2016
+      tmdb_id: 313369
+      imdb_id: "tt3783958"
+      youtube_trailer_id: "0pdqf4P9MB8"
+    - title: "Past Lives"
+      year: 2023
+      tmdb_id: 666277
+      imdb_id: "tt13238346"
+      youtube_trailer_id: "kA244xewjcI"
+    - title: "Anyone But You"
+      year: 2023
+      tmdb_id: 932420
+      imdb_id: "tt14861866"
+      # 列表形式：从前往后逐个尝试，第一个抓到评论就停
+      youtube_trailer_ids:
+        - "TvxMzfrJg94"   # primary trailer
+        - "ozHyzhutpu0"   # alternative review/clip
+        - "JLNKsGRr8VQ"   # backup
+    - title: "The Notebook"
+      year: 2004
+      tmdb_id: 11036
+      imdb_id: "tt0332280"
+      youtube_trailer_id: "FC6biTjEyZw"
+
+  horror:
+    - title: "Hereditary"
+      year: 2018
+      tmdb_id: 493922
+      imdb_id: "tt7784604"
+      youtube_trailer_id: "V6wWKNij_1M"
+    - title: "Get Out"
+      year: 2017
+      tmdb_id: 419430
+      imdb_id: "tt5052448"
+      youtube_trailer_id: "DzfpyUB60YY"
+    - title: "Smile"
+      year: 2022
+      tmdb_id: 882598
+      imdb_id: "tt15474916"
+      youtube_trailer_ids:
+        - "Ofg-2Q2yyMA"
+        - "wd-Ce9TYbEM"
+        - "5ZiV-tDcgg8"
+    - title: "Talk to Me"
+      year: 2022
+      tmdb_id: 1008042
+      imdb_id: "tt10638522"
+      youtube_trailer_ids:
+        - "TYy0oZqhjHk"
+        - "S5jYnLnZyPo"
+        - "VrWvU7CdjGc"
+
+# ---- 向量化 ----
+vectorize:
+  text:
+    tfidf_max_features: 3000
+    tfidf_min_df: 2
+    doc2vec_vector_size: 100
+    doc2vec_epochs: 30
+    word2vec_vector_size: 100
+  image:
+    clip_model: "openai/clip-vit-base-patch32"
+    resnet_model: "resnet50"
+    image_size: 224
+
+# ---- OpenAI ----
+openai:
+  model: "gpt-4o-mini"               # 便宜版本
+  max_tokens: 200
+  temperature: 0.3
+  batch_size: 10
+  sentiment_sample_size: 300         # 给 GPT 打标的评论数（控制成本）
+  synthetic_per_genre: 20            # 每类型生成多少条合成评论
+
+# ---- 机器学习 ----
+ml:
+  kmeans_n_clusters: 6
+  classifier_test_size: 0.2
+  random_state: 42
+  poster_train_epochs: 5
+  poster_batch_size: 16
+
+# ---- 输出 ----
+output:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  posters_dir: "data/posters"
+  figures_dir: "outputs/figures"
+  models_dir: "outputs/models"
