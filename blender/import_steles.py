@@ -1,13 +1,13 @@
 """Step 1 of the Blender pipeline — import 24+ STL fragments and place
 them on three concentric rings.
 
-Paradigm note (compared with the other two demos):
-* demo130/blender uses ``bmesh`` and writes vertex-level imperative code.
-* demo131/blender creates Geometry-Nodes node-trees (declarative graphs).
-* THIS file deliberately uses **only the high-level ``bpy.ops`` /
-  ``bpy.data`` API** and the **modifier stack** — no bmesh, no GN.
-  The geometry comes from OpenSCAD's CSG output (``outputs/stl/*.stl``);
-  Blender only stages, materialises and animates it.
+Design choice
+=============
+This file deliberately uses **only the high-level ``bpy.ops`` /
+``bpy.data`` API** and the **modifier stack** — no low-level bmesh
+vertex edits, no Geometry-Nodes node-trees. The geometry comes from
+OpenSCAD's CSG output (``outputs/stl/*.stl``); Blender only stages,
+materialises and animates it.
 
 Run order (in Blender 4.x's Scripting workspace):
     1. import_steles.py        ← THIS file (resets scene, imports STLs,
@@ -176,8 +176,7 @@ def _import_or_fallback(stl_path: Path,
                         coll: bpy.types.Collection) -> bpy.types.Object:
     """Import an STL when available, else build a primitive that follows
     the same six parameters so the animation still renders end-to-end
-    (matches demo131's "primitive fallback" pattern but with totally
-    different geometry — a tapered prism rather than a cylinder)."""
+    even if the OpenSCAD step has not been run yet."""
     name = fragment["fragment_id"]
     if stl_path.exists():
         before = set(bpy.data.objects)

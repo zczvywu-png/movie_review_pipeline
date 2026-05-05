@@ -2,9 +2,8 @@
 
 Animation paradigm
 ==================
-* demo130 keyframes per-fragment Z-position phase-by-phase.
-* demo131 keyframes a Reveal slider plus a helical orbit.
-* THIS file uses the **NLA editor** + **F-Curve modifiers**:
+Use the **NLA editor** + **F-Curve modifiers** rather than dense
+keyframing:
   - one short *Action* describes the mood arc once (positive → cynical
     → euphoric); the NLA editor *replays* it across the timeline.
   - The camera follows a *Bezier curve* via the Follow-Path constraint,
@@ -110,8 +109,7 @@ def _build_camera_path() -> bpy.types.Object:
     """Create a Bezier curve that orbits the three rings.
 
     The shape is a flattened heart-shape, NOT a circle (so the camera's
-    distance from origin varies subtly — different from demo130's
-    waypoint flythrough and demo131's helical orbit).
+    distance from origin varies subtly across the loop).
     """
     if CAMERA_PATH_NAME in bpy.data.objects:
         bpy.data.objects.remove(bpy.data.objects[CAMERA_PATH_NAME], do_unlink=True)

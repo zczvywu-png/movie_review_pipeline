@@ -14,8 +14,8 @@ single JSON file means:
 
 Fragment unit
 =============
-We do **not** copy demo130's "5 cluster x 4 variant grid" or demo131's
-helical layout. Instead each fragment is a (movie, archetype) pair:
+Each fragment is a (movie, archetype) pair. Layout is three concentric
+rings — one per genre — rather than a regular grid or a helix:
 
 * 12 movies × 2 dominant archetypes = 24 fragments  (>= 20 hard target)
 * 3 concentric rings at radii (8, 14, 20) — one per genre

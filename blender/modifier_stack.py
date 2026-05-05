@@ -1,18 +1,16 @@
 """Step 2 — attach a per-cluster modifier stack to every imported stele.
 
-Why this is the third Blender paradigm
-======================================
-* demo130 runs ``bmesh.ops`` directly on vertices/edges/faces (imperative).
-* demo131 builds a Geometry-Nodes node-tree (declarative dataflow graph).
-* THIS file uses Blender's **modifier stack** — an ordered list of
-  parametric operators applied on top of the base mesh:
+Why a modifier stack
+====================
+Blender's **modifier stack** is an ordered list of parametric operators
+applied on top of the base mesh:
 
-      [Array]  →  [Solidify]  →  [Bevel]  →  [Decimate]  →  [Wireframe]
+    [Array]  →  [Solidify]  →  [Bevel]  →  [Decimate]  →  [Wireframe]
 
-  None of these touch vertex coordinates directly; they expose float
-  parameters that are perfectly suited to being driven by F-Curve
-  drivers (next file). All five modifiers are documented operators with
-  stable names, so cross-Blender-version compatibility is good.
+None of these touch vertex coordinates directly; they expose float
+parameters that are perfectly suited to being driven by F-Curve
+drivers (next file). All five modifiers are documented operators with
+stable names, so cross-Blender-version compatibility is good.
 
 Per-cluster preset
 ==================

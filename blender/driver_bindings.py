@@ -1,22 +1,18 @@
 """Step 3 — bind F-Curve drivers from per-fragment data to modifier
 parameters.
 
-Why use drivers (and why this is paradigmatically different)
-============================================================
+Why use drivers
+===============
 Blender drivers are formulas attached to a property: every frame Blender
 reads a "driver expression" (Python-evaluated arithmetic over named
-variables) and writes the result to a target socket. They are
-fundamentally different from:
-
-* keyframes (demo130)            — sampled at discrete frames
-* node-graph dataflow (demo131)  — evaluated per-vertex inside Geometry-
-                                   Nodes, no time component
-
-Drivers therefore let us treat the **timeline itself** as a free
-variable: a single global "mood" empty's location.x is the time-driven
-proxy for sentiment polarity, and every modifier amount across all 24
-steles is a closed-form function of `mood.location.x` plus that stele's
-own data (avg_intensity, std_intensity, etc.).
+variables) and writes the result to a target socket. Compared with
+keyframes (sampled at discrete frames) or per-vertex node-graph
+evaluation (no native time component), drivers let us treat the
+**timeline itself** as a free variable: a single global "mood" empty's
+location.x is the time-driven proxy for sentiment polarity, and every
+modifier amount across all 24 steles is a closed-form function of
+`mood.location.x` plus that stele's own data (avg_intensity,
+std_intensity, etc.).
 
 What gets driven
 ================

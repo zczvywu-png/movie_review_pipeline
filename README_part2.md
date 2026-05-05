@@ -6,24 +6,16 @@
 > intensity, twist tracks controversy, surface erosion tracks
 > negativity, emission tracks positive sentiment.
 
-## How this differs from demo130 / demo131
+## Two-tool design rationale
 
-The brief says software **environments** can be reused; "thinking" cannot.
-Below is the explicit differentiation table — every row swaps either
-the tool or the paradigm:
+| Tool | Role | Paradigm |
+|---|---|---|
+| **OpenSCAD** | parametric CSG geometry — one `.scad` source plus six per-fragment parameters produces 27 unique STL meshes | declarative boolean ops on primitive solids (`union / difference / linear_extrude / offset`) |
+| **Blender 4.x** | scene staging, materials, animation, rendering | high-level `bpy` API + modifier stack + F-Curve **drivers** + NLA editor (no `bmesh`, no Geometry Nodes) |
 
-| Layer | demo130 (Brutalism) | demo131 (Millennium-China) | **demo124 (this Part 2)** |
-|---|---|---|---|
-| Theme | Western Brutalism | China 2000–2010 landmarks | **Movie trailer reviews → influence steles** |
-| Design tool 1 | Blender (`bmesh` imperative) | Grasshopper (visual nodes) | **OpenSCAD (declarative CSG: `union/difference/linear_extrude`)** |
-| Design tool 2 | TouchDesigner (`.toe` audio-reactive) | Blender (Geometry-Node trees) | **Blender (modifier stack + F-Curve drivers + NLA)** |
-| Geometry paradigm | vertex-level edits | per-vertex node graph | **boolean ops on primitive solids → STL** |
-| Animation paradigm | keyframed phase blocks | Reveal slider + helical orbit | **NLA-driven mood Action + Bezier follow-path camera** |
-| Layout | 5×4 grid | linear stack + dendrogram | **3 concentric rings (one per genre)** |
-| Time variable | per-fragment delay | dendrogram leaf order | **single global `Mood_Driver.location.x` empty** |
-| Output container | `.toe` + `.blend` | `.gh` + `.blend` | **`.scad` + `.stl` × 27 + `.blend`** |
-
-No file-format collision with the previous two demos.
+Both tools read from the same single contract file
+(`outputs/fragments_params/clusters.json`), so Part 1 → Part 2 data
+provenance is fully auditable.
 
 ## Pipeline
 

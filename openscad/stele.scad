@@ -2,10 +2,8 @@
 //
 // CSG paradigm: the entire form is composed by declarative boolean
 // operations on primitive solids — `union()`, `difference()`,
-// `linear_extrude()`, `offset()`. NO mesh manipulation, NO node graphs.
-// This keeps the geometric thinking deliberately distinct from
-// demo130 (Blender bmesh — imperative vertex code) and demo131
-// (Blender Geometry Nodes / Grasshopper — node-based dataflow).
+// `linear_extrude()`, `offset()`. NO mesh manipulation, NO node graphs;
+// the geometric thinking is purely set-theoretic / boolean.
 //
 // All six inputs are 0..1 normalised values produced by
 // `bridge/export_clusters_json.py`. Pass them on the OpenSCAD CLI:
