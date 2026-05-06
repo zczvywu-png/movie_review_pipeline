@@ -109,7 +109,10 @@ threshold. Install OpenSCAD before the final submission.
 * `outputs/fragments_params/clusters.json`            (data contract)
 * `outputs/stl/*.stl`                                 (27 fragments)
 * `openscad/stele.scad`                               (the parametric source)
-* `<your-blender-file>.blend`                         (saved after Step 3)
+* `blender/movie_review.blend`                       (saved scene with all
+                                                        modifiers, drivers,
+                                                        NLA action, camera path
+                                                        — re-openable for re-render)
 * `outputs/renders/movie_review.mp4`                  (≥ 65 s)
 * `README_part2.md`, `requirements_part2.txt`         (this file & deps)
 
